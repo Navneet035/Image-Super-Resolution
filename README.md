@@ -17,7 +17,6 @@ pip install -r requirements.txt
 ```
 
 # Usage
-In app.py and mod.py file, change the location of folder to the folder you have cloned the repository.
 
 Run the flask app using provided command:
 ```bash
