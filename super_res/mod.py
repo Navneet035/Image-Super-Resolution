@@ -116,7 +116,7 @@ def _vgg(output_layer):
 
 generator = sr_resnet
 model = generator()
-model.load_weights(r'C:\Users\Navneet\Desktop\super_res\weights\srgan\gan_generator.h5')
+model.load_weights(r'weights\srgan\gan_generator.h5')
 
 
 def load_image(path):

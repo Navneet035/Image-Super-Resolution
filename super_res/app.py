@@ -48,8 +48,8 @@ def res(path):
     im1=Image.open(path)
     if(im1.format=='PNG'):
         image=im1.convert('RGB')
-        image.save(r'C:/Users/Navneet/Desktop/super_res/static/test_images/ne.png')
-        lr = load_image('C:/Users/Navneet/Desktop/super_res/static/test_images/ne.png')
+        image.save(r'static/test_images/ne.png')
+        lr = load_image('static/test_images/ne.png')
         sr = resolve_single(model, lr)
         np_im = numpy.array(sr)
         new_im = Image.fromarray(np_im)
@@ -57,8 +57,8 @@ def res(path):
         print ('png') 
     elif(im1.format=='JPEG'):
         image=im1.convert('RGB')
-        im1.save(r'C:/Users/Navneet/Desktop/super_res/static/test_images/ne.png')
-        lr = load_image('C:/Users/Navneet/Desktop/super_res/static/test_images/ne.png')
+        im1.save(r'static/test_images/ne.png')
+        lr = load_image('static/test_images/ne.png')
         sr = resolve_single(model, lr)
         np_im = numpy.array(sr)
         new_im = Image.fromarray(np_im)
