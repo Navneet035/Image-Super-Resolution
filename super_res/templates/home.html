@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Super Resolution</title>
+	<!-- 
+
+	Stylesheetes
+
+	-->
+	<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+	<link rel="stylesheet" media="all" href="static/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" media="all" href="static/css/bootstrap.min.css"> -->
+	
+	<link rel="stylesheet" media="all" href="static/css/demo.css" />
+	<link rel="stylesheet" media="all" href="static/css/style5.css">
+	
+	<script type="text/javascript" src="static/js/modernizr.custom.86080.js"></script>
+			<script>
+				function preview_image(event) 
+				{
+				var reader = new FileReader();
+				reader.onload = function()
+				{
+				var output = document.getElementById('output_image');
+				output.src = reader.result;
+				}
+				reader.readAsDataURL(event.target.files[0]);
+				}
+			</script>
+	</head>
+
+	<body>
+
+			<div id="particles-js"></div>
+		
+			<ul class="cb-slideshow">
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	        </ul>
+
+			<div class="container-fluid">
+				<div class="row cb-slideshow-text-container ">
+					<div class= "tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
+					<header class="mb-5"><h1>Super Resolution</h1></header>
+					<P class="mb-5">Enhance your images using artificial intelligence.</P>
+					
+                   
+               	    	<div class="row form-section">
+							
+							<form action="" enctype="multipart/form-data" method="post">
+    						<input name="file" type="file" onchange="preview_image(event)"/>
+							 <input type="submit" value="Upload" />
+							</form>
+							<img id="output_image"/>
+						</div>
+                    
+                    
+					<div class="tm-social-icons-container text-xs-center">
+					<a href="https://www.linkedin.com/in/navneetkaur035/" class="tm-social-link"><i class="fa fa-linkedin"></i></a>
+					<a href="https://github.com/Navneet035" class="tm-social-link"><i class="fa fa-github"></i></a>
+	            	<a href="navneet2000@yahoo.com" class="tm-social-link"><i class="fa fa-yahoo"></i></a>
+	                    
+	                </div>
+
+					</div>
+				</div>	
+				<div class="footer-link">
+					<p>navneetbhogal325@gmail.com 
+                    
+                    - Contact Email</p>
+				</div>
+			</div>	
+
+        <script type="text/javascript" src="static/js/particles.js"></script>
+	    <script type="text/javascript" src="static/js/app.js"></script>
+
+	</body>
+
+	
+</html>
+
